@@ -1,6 +1,6 @@
 ## My opinionated software project development guideline
 
-Status: 1.2.
+Status: 1.3.
 
 ## Rationale
 
@@ -21,7 +21,7 @@ Status: 1.2.
 
 Use exclusively:
 - GitHub
-- A shared calendar
+- A shared calendar (e.g: Calendly, cal.com)
 - StackOverflow
 - Matrix/Element/Slack/Mattermost/IRC (some instant messaging tool with public channels, audio and video calls)
 
@@ -135,18 +135,20 @@ There are 6 types of meetings, each with their specific purpose.
 
 ##### Scoped issue-related meeting
 
-Specific meetings to solve specific issue  when async discussions aren't enough - only with stakeholders who are involved in the task at hand. Those are planned in the shared calendar by the one who need help with a _very precise meeting agenda_. The scope shouldn't be "let's just talk". The person who is planning the meeting is responsible for taking the minutes and putting them in the relevant GitHub Issue/Discussions.
+- Specific meetings aimed to solve specific issue when async discussions aren't enough 
+- Only involve stakeholders who are concerned by the task at hand. 
+- Those meetings are planned in the shared calendar by the one who need help.. 
+- The scope shouldn't be "let's just talk". A _very precise meeting agenda_ must be planned in advance in the `remarks` field of the calendar invite by the person who initiated the meeting.
+- The person who is planning the meeting is responsible for taking the minutes and putting them in the relevant GitHub Issue/Discussions.
 
 ##### Coffee break meeting
 
 Usually around 15 minutes - just to relax and chat. It's important to keep healthy socially...
 
-
 ##### Organizational/large-scope meetings
 
 - Every 3 weeks at most (optional - on demand):
 - We discuss long-term vision, any issues in a X hours meeting
-
 
 ## Working culture
 
