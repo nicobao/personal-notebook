@@ -1,6 +1,6 @@
 ## My opinionated software project development guideline
 
-Status: 1.1.
+Status: 1.2.
 
 ## Rationale
 
@@ -50,9 +50,9 @@ https://github.com/features/issues
 ### Usage of calendar
 
 Everyone must keep up to date the shared calendar and put there:
-- their availibilities for 
-- the time when they are concentrated on work and should not be interrupted
-- the time when they are off
+- their availibilities for [Scoped issue-related meetings]($scoped-issue-related-meeting).
+- the time when they are concentrated on work and should not be interrupted.
+- the time when they are off.
 
 ### Usage of instant messaging (Slack/Matrix etc)
 
