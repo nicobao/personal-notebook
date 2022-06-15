@@ -137,7 +137,7 @@ There are 6 types of meetings, each with their specific purpose.
 
 - Specific meetings aimed to solve specific issue when async discussions aren't enough 
 - Only involve stakeholders who are concerned by the task at hand. 
-- Those meetings are planned in the shared calendar by the one who need help.. 
+- Those meetings are planned in the shared calendar by the one who need help. 
 - The scope shouldn't be "let's just talk". A _very precise meeting agenda_ must be planned in advance in the `remarks` field of the calendar invite by the person who initiated the meeting.
 - The person who is planning the meeting is responsible for writing the minutes in the relevant GitHub Issue/Discussions.
 
