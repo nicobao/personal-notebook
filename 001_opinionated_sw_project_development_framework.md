@@ -102,7 +102,7 @@ There are 6 types of meetings, each with their specific purpose.
 - This should be the culmination of the three weeks of work from the product team. Most of the use-case/epics/issues should already have been created.
 - We plan the product features we want to get done:
 	- We assign tasks to people
-	- We put all this information in GitHub (epic/issues/tags/project tables and boards)
+	- We put all this information on GitHub (epic/issues/tags/project tables and boards)
 	- We must leave space for uncertainties. Urgent issues may be added to the plan during the sprints.
 	- We must take into consideration all the duties that's not directly related to the product. It's easy to forget them (like writing this document, like commuting or installing dependencies on one's computer, fixing issues with one's personal router etc) when planning time.
 
@@ -114,7 +114,7 @@ There are 6 types of meetings, each with their specific purpose.
 - 5 persons max per meeting. 
 - These meetings have two goals:
 	- motivate everyone to wake up in the morning, deliver and create a sense of commitment
-	- give everyone an overall understanding about what others are doing and their throught process. No discussion about issues neither in terms of implementations or features are expected at all. It's one person then the next who present what they do. Discussions, if necessary, will take place later in GitHub issues or, if really necessary in separate sync meetings.
+	- give everyone an overall understanding about what others are doing and their throught process. No discussion about issues neither in terms of implementations or features are expected at all. It's one person then the next who present what they do. Discussions, if necessary, will take place later on GitHub issues or, if really necessary in separate sync meetings.
 - At the beginning of the meeting, we say hi for 2 minutes.
 	- Then each participant explains in _5 minutes maximum_:
 		- What they did yesterday. Without getting into the dirty details. Sharing important info such as "I chose this architecture, it is documented here. For those who are interested, respond to the issue or let's organize a call later."
