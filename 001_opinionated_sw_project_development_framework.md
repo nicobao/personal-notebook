@@ -82,18 +82,15 @@ The identities of the leader/secretary are assigned successively to each team pa
 
 ### Meetings
 
-- Every 3 weeks, at the end of the sprint for 1-2 hours:
-  - We do a end-of-sprint meeting.
-  - We close the issues, we discuss the problems.
+Agile development licycle has a lot of upsides. Let's keep that. We work in batches of 3 weeks long sprints.
 
 - Every 3 weeks at the beginning of the sprint:
   - We do a special start-of-sprint meeting
   - We plan the product features we want to get done in a 1-2 hour long meeting
   - We assign tasks to people
   - We put all this information in GitHub (epic/issues/tags/project tables and boards)
-
-- Every 3 weeks at most (optional - on demand):
-  - We discuss long-term vision, issues in a 2 hours meeting
+  - We must leave space for uncertainties. Urgent issues may be added to the plan during the sprints.
+  - We must take into consideration all the duties that's not directly related to the product. It's easy to forget them (like writing this document, like commuting or installing dependencies on one's computer, fixing issues with one's personal router etc) when planning time.
 
 - Daily meeting
   - 30 minutes max. 
@@ -105,6 +102,16 @@ The identities of the leader/secretary are assigned successively to each team pa
 	- What they need from others
 	- What they are going to do today 
   - At the end of the meeting, we take 2 minutes to talk about what will be discussed tomorrow. 
+
+- Every 3 weeks, at the end of the sprint for 1-2 hours:
+  - We do a end-of-sprint meeting.
+  - We close the issues, we discuss the problems.
+
+But we also need to talk about more high-level issues from time-to-time:
+
+- Every 3 weeks at most (optional - on demand):
+  - We discuss long-term vision, issues in a 2 hours meeting
+
 
 ### Typical day of work
 
