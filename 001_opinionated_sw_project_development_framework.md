@@ -27,7 +27,11 @@ Everyone must keep up to date the shared calendar and put there:
 - the time when they are concentrated on work and should not be interrupted
 - the time when they are off
 
-Every 3 weeks:
+Every 3 weeks, at the end of the sprint for 1-2 hours:
+- We do a end-of-sprint meeting.
+- We close the issues, we discuss the problems.
+
+Every 3 weeks at the beginning of the sprint:
 - We do a special start-of-sprint meeting
 - We plan the product features we want to get done in a 1-2 hour long meeting
 - We assign tasks to people
