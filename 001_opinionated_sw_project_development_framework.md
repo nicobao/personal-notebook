@@ -26,6 +26,9 @@ Status: work-in-progress.
 
 ## Usage of GitHub
 
+Tools like Jira are unecessary. GitHub already contain project/product management tools:
+https://github.com/features/issues
+
 - the #1 source of truth
 - having too many tools create cognitive overhead (where should I store it? where is the information?). It is counter-productive.
 - put maximum info there
@@ -86,7 +89,7 @@ The identities of the leader/secretary are assigned successively to each team pa
   - We do a special start-of-sprint meeting
   - We plan the product features we want to get done in a 1-2 hour long meeting
   - We assign tasks to people
-  - We put all this information in GitHub (epic/issues/tags/project tables and boards https://github.com/features/issues )
+  - We put all this information in GitHub (epic/issues/tags/project tables and boards)
 
 - Every 3 weeks at most (optional - on demand):
   - We discuss long-term vision, issues in a 2 hours meeting
