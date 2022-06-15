@@ -101,10 +101,10 @@ There are 6 types of meetings, each with their specific purpose.
 - 1-2 hours long
 - This should be the culmination of the three weeks of work from the product team. Most of the use-case/epics/issues should already have been created.
 - We plan the product features we want to get done:
-		- We assign tasks to people
-		- We put all this information in GitHub (epic/issues/tags/project tables and boards)
-		- We must leave space for uncertainties. Urgent issues may be added to the plan during the sprints.
-		- We must take into consideration all the duties that's not directly related to the product. It's easy to forget them (like writing this document, like commuting or installing dependencies on one's computer, fixing issues with one's personal router etc) when planning time.
+	- We assign tasks to people
+	- We put all this information in GitHub (epic/issues/tags/project tables and boards)
+	- We must leave space for uncertainties. Urgent issues may be added to the plan during the sprints.
+	- We must take into consideration all the duties that's not directly related to the product. It's easy to forget them (like writing this document, like commuting or installing dependencies on one's computer, fixing issues with one's personal router etc) when planning time.
 
 ##### Daily Stand-up
 
