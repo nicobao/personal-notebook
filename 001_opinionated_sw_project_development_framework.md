@@ -7,6 +7,7 @@ Status: 1.3.
 - Every stakeholder in the development of the project must produce something. Either documentation or code. Documentation is as important as code. Documentation for everything not just code: product, strategy etc.
 - Nobody should hold knowledge for themselves and be irreplaceable. That's bad for the survival of the project.
 - It's not faster to talk than to write. Maybe when writing it feels long. But we save time at the end, and quality. A lot is lost in translation, a lot is forgotten. Most misunderstanding comes from oral discussions. We think the other person understands us but they don't.
+- Writing helps making our own thoughts much clearer. We realize it's messy only when we put it in writing. How are others supposed to understand us to write software if our ideas are messy? Softwares aren't imprecise.
 - Writing has the added benefit of generating documentation.
 - Async first. People aren't in the same timezone eventually. People aren't available at the same time.
 - We don't want to make people lose their time. Else they lose momentum and motivation. Give them time to think before responding. The first answer is usually not good.
