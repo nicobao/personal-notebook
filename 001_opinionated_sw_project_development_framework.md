@@ -88,7 +88,7 @@ There are 6 types of meetings, each with their specific purpose.
 
 1. Every 3 weeks at the beginning of the sprint:
 	- We do a special start-of-sprint meeting
-	- This should be the culmination of the three weeks of work from the product team. They should have all most of the use-case/epics/issues already created.
+	- This should be the culmination of the three weeks of work from the product team. Most of the use-case/epics/issues should already have been created.
 	- We plan the product features we want to get done in a 1-2 hour long meeting
 		- We assign tasks to people
 		- We put all this information in GitHub (epic/issues/tags/project tables and boards)
