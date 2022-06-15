@@ -107,7 +107,7 @@ There are 6 types of meetings, each with their specific purpose.
 		- What they need from others
 		- What they are going to do today 
 	- At the end of the meeting, we take 2 minutes to talk about what will be discussed tomorrow. 
-1. Specific meetings to solve specific issue  when async discussions aren't enough - only with stakeholders who are involved in the task at hand. Those are planned in the shared calendar by the one who need help with a _very precise meeting agenda_. The scope shouldn't be "let's just talk".
+1. Specific meetings to solve specific issue  when async discussions aren't enough - only with stakeholders who are involved in the task at hand. Those are planned in the shared calendar by the one who need help with a _very precise meeting agenda_. The scope shouldn't be "let's just talk". The person who is planning the meeting is responsible for taking the minutes and putting them in the relevant GitHub Issue/Discussions.
 1. "Coffeee break" type of meetings. Usually around 15 minutes - just to relax and chat. It's important to keep healthy socially...
 1. Every 3 weeks, at the end of the sprint for 1-2 hours:
 	- We close the issues, we close the sprint, we tag in git a stable version and deploy the code in production. We discuss the problems we encountered.
