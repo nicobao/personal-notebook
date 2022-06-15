@@ -36,8 +36,8 @@ The leader role is:
 - to lead the meetings
 
 The secretary role is:
-- to take notes during each meetings and push them on GitHub
-
+- to take notes during each meetings and put them on Github Discussions
+- 
 The identities of the leader/secretary are assigned successively to each team participant in turn.
 
 Every 3 weeks, at the end of the sprint for 1-2 hours:
@@ -55,12 +55,11 @@ Every 3 weeks at most (optional - on demand):
 
 Typical day of work:
 - Start working at 09:00. Review code of others until 09:30.
-- 09:30 => daily meetings. 30 minutes max. 5 persons max per meeting. Someone must be assigned to take notes and put them on GitHub (Discussions?). During daily meetup, we say hi for 2 minutes. Then each participant explains in _5 minutes maximum_:
+- 09:30 => daily meetings. 30 minutes max. 5 persons max per meeting. At the end of the meeting, we take 2 minutes to talk about what will be discussed tomorrow. During daily meetup, we say hi for 2 minutes. Then each participant explains in _5 minutes maximum_:
 	- What they did yesterday. Without getting into the dirty details. Sharing important info such as "I chose this architecture, it is documented here. For those who are interested, respond to the issue or let's organize a call later."
 	- Where they are blocked if that's the case
 	- What they need from others
 	- What we are gonna do today
-  At the end of the meeting, we take 2 minutes to talk about what will be discussed tomorrow.
 - 10:00 to end of day => get your shit done. Create a DRAFT PR for your issue and link to the issue. Set up meeting with relevant people if and only if it's not necessary to fix it otherwise
 - end of the day => push work-in-progress code. It doesn't matter if it doesn't build. It's important to allow code reviews and for other to find architectural mistakes before too much work has been done.
 
