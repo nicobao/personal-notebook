@@ -59,7 +59,7 @@ Typical day of work:
 	- What they did yesterday. Without getting into the dirty details. Sharing important info such as "I chose this architecture, it is documented here. For those who are interested, respond to the issue or let's organize a call later."
 	- Where they are blocked if that's the case
 	- What they need from others
-	- What we are gonna do today
+	- What they are going to do today
 - 10:00 to end of day => get your shit done. Create a DRAFT PR for your issue and link to the issue. Set up meeting with relevant people if and only if it's not necessary to fix it otherwise
 - end of the day => push work-in-progress code. It doesn't matter if it doesn't build. It's important to allow code reviews and for other to find architectural mistakes before too much work has been done.
 
