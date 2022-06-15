@@ -2,13 +2,6 @@
 
 Status: 1.0.
 
-## Tools
-
-- GitHub
-- A shared calendar
-- StackOverflow
-- Matrix/Element/Slack/Mattermost/IRC (some instant messaging tool with public channels, audio and video calls)
-
 ## Rationale
 
 - Every stakeholder in the development of the project must produce something. Either documentation or code. Documentation is as important as code. Documentation for everything not just code: product, strategy etc.
@@ -24,7 +17,15 @@ Status: 1.0.
 - Motivate each other by organizing _short_ daily calls in the morning.
 - In general, follow the [Async Manifesto](http://asyncmanifesto.org/)
 
-## Usage of GitHub
+## Tools
+
+Use exclusively:
+- GitHub
+- A shared calendar
+- StackOverflow
+- Matrix/Element/Slack/Mattermost/IRC (some instant messaging tool with public channels, audio and video calls)
+
+### Usage of GitHub
 
 Tools like Jira or Notion are unecessary. GitHub already contains project/product management tools:
 https://github.com/features/issues
@@ -41,29 +42,29 @@ https://github.com/features/issues
 - it helps for automating end-to-end testing
 - it helps for generating reports
 
-## Usage of calendar
+### Where to put documentation?
+- on the GitHub monorepo's READMEs
+- on the GitHub wiki page
+- link wiki pages in README
+
+### Usage of calendar
 
 Everyone must keep up to date the shared calendar and put there:
 - their availibilities for one-to-one meeting
 - the time when they are concentrated on work and should not be interrupted
 - the time when they are off
 
-## Usage of instant messaging (Slack/Matrix etc)
+### Usage of instant messaging (Slack/Matrix etc)
 
 - avoid it at all cost for things related to issues/product. Prefer writing in the relevant GitHub issue.
 - prefer GitHub discussions for something related to the project that doesn't fit into one particular issue
 - use it only when absolutely necessary.
 - when using instant messaging tool, prefer public channels if what you write are interesting for others (which is the case 90% of the time)
 
-## Usage of StackOverflow
+### Usage of StackOverflow
 
 - when a question is asked about something unrelated to the specific work at hand, but is rather a question of technology in general, use StackOverflow, and respond there.
-- list relevant StackOverflow questions in the documentation on GitHub (on some readme page or in the wiki)
-
-## Where to put documentation?
-- on the GitHub monorepo's READMEs
-- on the GitHub wiki page
-- link wiki pages in README
+- list relevant StackOverflow questions in the documentation on GitHub
 
 ## Sprints and meetings
 
@@ -115,14 +116,16 @@ There are 6 types of meetings, each with their specific purpose.
 	- We discuss long-term vision, issues in a 2 hours meeting
 
 
-## Typical day of work
+## Working culture
+
+### Typical day of work
 
 - Start working at 09:00. Review code of others until 09:30.
 - 09:30 => daily meeting until 10:00. 
 - 10:00 to end of day => get your shit done. Create a DRAFT PR for your issue and link to the issue. Set up meetings with relevant people if and only if it's not necessary to fix it otherwise. Staging must be deployed automatically everytime a PR is merged to main. It must represent the latest development work and be tested immediately.
 - end of the day => push work-in-progress code. It doesn't matter if it doesn't build. It's important to allow code reviews and for other to find architectural mistakes before too much work has been done.
 
-## What to do when there is an emergency and people are on holiday/unavailable in their calendar?
+### What to do when there is an emergency and people are on holiday/unavailable in their calendar?
 
 If there is an emergency and you absolutely need to contact someone who's on holiday or who's unavailable in their calendar: *call them*.
 
@@ -132,7 +135,7 @@ _USE CALL ONLY_ when there is an emergency. And only call for a _real_ emergency
 
 When you're away or in "concentrating-mode", mute your messaging app. Only keep your phone in case someone calls you for an emergency. Nobody calls you? Then you can just chill out.
 
-## Can you send people messages when there are unavailable?
+### Can you send people messages when there are unavailable?
 
 YES, you should. For anything that's not an emergency. Open issues, tag them, respond to their GitHub issues. Send them text on instant messaging app if you want. But, don't expect a response *right now*.
 
