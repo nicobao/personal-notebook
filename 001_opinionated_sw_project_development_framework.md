@@ -127,7 +127,7 @@ _DO NOT USE TEXT MESSAGE_ or email for emergency. Otherwise it creates an uneces
 
 _USE CALL ONLY_ when there is an emergency. And only for emergency.
 
-When you're away mute your messaging app. Only keep your phone in case someone calls you for an emergency. Nobody calls you? Then you can just chill out.
+When you're away, mute your messaging app. Only keep your phone in case someone calls you for an emergency. Nobody calls you? Then you can just chill out.
 
 ## Can you send people messages when there are unavailable?
 
