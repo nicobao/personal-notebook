@@ -26,7 +26,7 @@ Status: 1.0.
 
 ## Usage of GitHub
 
-Tools like Jira are unecessary. GitHub already contains project/product management tools:
+Tools like Jira or Notion are unecessary. GitHub already contains project/product management tools:
 https://github.com/features/issues
 
 - the #1 source of truth
