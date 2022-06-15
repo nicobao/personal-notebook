@@ -87,29 +87,29 @@ The identities of the leader/secretary are assigned successively to each team pa
 There are 6 types of planned meetings, each with their specific purpose.
 
 1. Every 3 weeks at the beginning of the sprint:
-  - We do a special start-of-sprint meeting
-  - We plan the product features we want to get done in a 1-2 hour long meeting
-  - We assign tasks to people
-  - We put all this information in GitHub (epic/issues/tags/project tables and boards)
-  - We must leave space for uncertainties. Urgent issues may be added to the plan during the sprints.
-  - We must take into consideration all the duties that's not directly related to the product. It's easy to forget them (like writing this document, like commuting or installing dependencies on one's computer, fixing issues with one's personal router etc) when planning time.
+	- We do a special start-of-sprint meeting
+	- We plan the product features we want to get done in a 1-2 hour long meeting
+		- We assign tasks to people
+		- We put all this information in GitHub (epic/issues/tags/project tables and boards)
+		- We must leave space for uncertainties. Urgent issues may be added to the plan during the sprints.
+		- We must take into consideration all the duties that's not directly related to the product. It's easy to forget them (like writing this document, like commuting or installing dependencies on one's computer, fixing issues with one's personal router etc) when planning time.
 1. Morning 30 minutes Daily meeting
-  - 30 minutes max. 
-  - 5 persons max per meeting. 
-  - At the beginning of the meeting, we say hi for 2 minutes.
-  - Then each participant explains in _5 minutes maximum_:
-	- What they did yesterday. Without getting into the dirty details. Sharing important info such as "I chose this architecture, it is documented here. For those who are interested, respond to the issue or let's organize a call later."
-	- Where they are blocked if that's the case
-	- What they need from others
-	- What they are going to do today 
-  - At the end of the meeting, we take 2 minutes to talk about what will be discussed tomorrow. 
+	- 30 minutes max. 
+	- 5 persons max per meeting. 
+	- At the beginning of the meeting, we say hi for 2 minutes.
+	- Then each participant explains in _5 minutes maximum_:
+		- What they did yesterday. Without getting into the dirty details. Sharing important info such as "I chose this architecture, it is documented here. For those who are interested, respond to the issue or let's organize a call later."
+		- Where they are blocked if that's the case
+		- What they need from others
+		- What they are going to do today 
+	- At the end of the meeting, we take 2 minutes to talk about what will be discussed tomorrow. 
 1. Specific meetings to solve specific issue  when async discussions aren't enough - only with stakeholders who are involved in the task at hand. Those are planned in the shared calendar by the one who need help with a _very precise meeting agenda_. The scope shouldn't be "let's just talk".
 1. "Coffeee break" type of meetings. Usually around 15 minutes - just to relax and chat. It's important to keep healthy socially...
 1. Every 3 weeks, at the end of the sprint for 1-2 hours:
-  - We do a end-of-sprint meeting.
-  - We close the issues, we discuss the problems.
+	- We do a end-of-sprint meeting.
+	- We close the issues, we discuss the problems.
 1. Every 3 weeks at most (optional - on demand):
-  - We discuss long-term vision, issues in a 2 hours meeting
+	- We discuss long-term vision, issues in a 2 hours meeting
 
 
 ### Typical day of work
