@@ -37,7 +37,7 @@ The leader role is:
 
 The secretary role is:
 - to take notes during each meetings and put them on Github Discussions
-- 
+
 The identities of the leader/secretary are assigned successively to each team participant in turn.
 
 Every 3 weeks, at the end of the sprint for 1-2 hours:
