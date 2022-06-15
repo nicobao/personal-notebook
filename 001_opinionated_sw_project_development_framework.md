@@ -126,14 +126,14 @@ There are 6 types of meetings, each with their specific purpose.
 
 If there is an emergency and you absolutely need to contact someone who's on holiday or who's unavailable in their calendar: *call them*.
 
-_DO NOT USE TEXT MESSAGE_ or email for emergency. Otherwise it creates an unecessary stress for people who are supposed to relax. They have to constantly check their messaging app in case of an emergency. It's not healthy and leads to burnout.
+_DO NOT USE TEXT MESSAGE_ or email for emergency. Otherwise it creates an unecessary stress for people who are supposed to either relax or be concentrated to get their task done. With text messages, they'd have to constantly check their messaging app in case of an emergency. It's not healthy at all if you're supposed to be off, it is counter-productive if you need to concentrate, and it leads to burnout.
 
-_USE CALL ONLY_ when there is an emergency. And only for emergency.
+_USE CALL ONLY_ when there is an emergency. And only call for a _real_ emergency (that's _very_ rare).
 
-When you're away, mute your messaging app. Only keep your phone in case someone calls you for an emergency. Nobody calls you? Then you can just chill out.
+When you're away or in "concentrating-mode", mute your messaging app. Only keep your phone in case someone calls you for an emergency. Nobody calls you? Then you can just chill out.
 
 ## Can you send people messages when there are unavailable?
 
-YES, you should. For anything that's not an emergency. Open issues, tag them, respond to their GitHub issues. Send them text on instant messaging app if you want. But, don't expect a response.
+YES, you should. For anything that's not an emergency. Open issues, tag them, respond to their GitHub issues. Send them text on instant messaging app if you want. But, don't expect a response *right now*.
 
-It's the responsibility of the person that's away to cut off notifications when they are away/concentrating.
+It's up to the responsibility of the person that's away to cut off notifications when they are away/concentrating.
