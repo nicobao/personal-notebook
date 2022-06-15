@@ -1,6 +1,6 @@
 ## My opinionated software project development guideline
 
-Status: 1.0.
+Status: 1.1.
 
 ## Rationale
 
@@ -87,33 +87,54 @@ The identities of the leader/secretary are assigned successively to each team pa
 
 There are 6 types of meetings, each with their specific purpose.
 
-1. Every 3 weeks at the beginning of the sprint:
-	- We do a special start-of-sprint meeting
-	- This should be the culmination of the three weeks of work from the product team. Most of the use-case/epics/issues should already have been created.
-	- We plan the product features we want to get done in a 1-2 hour long meeting
+#### Start-of-sprint meeting
+
+- Every 3 weeks on Monday morning which marks the beginning of the sprint
+- 1-2 hours long
+- This should be the culmination of the three weeks of work from the product team. Most of the use-case/epics/issues should already have been created.
+- We plan the product features we want to get done:
 		- We assign tasks to people
 		- We put all this information in GitHub (epic/issues/tags/project tables and boards)
 		- We must leave space for uncertainties. Urgent issues may be added to the plan during the sprints.
 		- We must take into consideration all the duties that's not directly related to the product. It's easy to forget them (like writing this document, like commuting or installing dependencies on one's computer, fixing issues with one's personal router etc) when planning time.
-1. Morning 30 minutes Daily meeting
-	- 30 minutes max. 
-	- 5 persons max per meeting. 
-	- These meetings have two goals:
-		- motivate everyone to wake up in the morning, deliver and create a sense of commitment
-		- give everyone an overall understanding about what others are doing and their throught process. No discussion about issues neither in terms of implementations or features are expected at all. It's one person then the next who present what they do. Discussions, if necessary, will take place later in GitHub issues or, if really necessary in separate sync meetings.
-	- At the beginning of the meeting, we say hi for 2 minutes.
+
+#### Morning 30 minutes Daily meeting
+
+- Every day in the morning at 09:30 CEST. Except when there is a start-of-sprint or stop-of-sprint meeting.
+- 30 minutes max. 
+- 5 persons max per meeting. 
+- These meetings have two goals:
+	- motivate everyone to wake up in the morning, deliver and create a sense of commitment
+	- give everyone an overall understanding about what others are doing and their throught process. No discussion about issues neither in terms of implementations or features are expected at all. It's one person then the next who present what they do. Discussions, if necessary, will take place later in GitHub issues or, if really necessary in separate sync meetings.
+- At the beginning of the meeting, we say hi for 2 minutes.
 	- Then each participant explains in _5 minutes maximum_:
 		- What they did yesterday. Without getting into the dirty details. Sharing important info such as "I chose this architecture, it is documented here. For those who are interested, respond to the issue or let's organize a call later."
 		- Where they are blocked if that's the case
 		- What they need from others
 		- What they are going to do today 
 	- At the end of the meeting, we take 2 minutes to talk about what will be discussed tomorrow. 
-1. Specific meetings to solve specific issue  when async discussions aren't enough - only with stakeholders who are involved in the task at hand. Those are planned in the shared calendar by the one who need help with a _very precise meeting agenda_. The scope shouldn't be "let's just talk". The person who is planning the meeting is responsible for taking the minutes and putting them in the relevant GitHub Issue/Discussions.
-1. "Coffeee break" type of meetings. Usually around 15 minutes - just to relax and chat. It's important to keep healthy socially...
-1. Every 3 weeks, at the end of the sprint for 1-2 hours:
-	- We close the issues, we close the sprint, we tag in git a stable version and deploy the code in production. We discuss the problems we encountered.
-1. Every 3 weeks at most (optional - on demand):
-	- We discuss long-term vision, issues in a 2 hours meeting
+
+#### Specific scoped issue-related meeting
+
+Specific meetings to solve specific issue  when async discussions aren't enough - only with stakeholders who are involved in the task at hand. Those are planned in the shared calendar by the one who need help with a _very precise meeting agenda_. The scope shouldn't be "let's just talk". The person who is planning the meeting is responsible for taking the minutes and putting them in the relevant GitHub Issue/Discussions.
+
+#### Coffee break meeting
+
+Usually around 15 minutes - just to relax and chat. It's important to keep healthy socially...
+
+#### End-of-sprint meeting
+
+- Every 3 weeks, on Thursday morning which marks the end of the sprint 
+- It lasts 1-2 hours:
+- We close the issues, we close the sprint,  We discuss the problems we encountered.
+- We tag in git a stable version and deploy the code in production. That's why we don't do it on Friday.
+- The day after, on Friday, is an off-sprint day which is left for correcting bugs if there are issues after deployment on production - or working on things that we usually don't have the time to work on
+
+
+#### Organizational/large-scope meetings
+
+- Every 3 weeks at most (optional - on demand):
+- We discuss long-term vision, any issues in a X hours meeting
 
 
 ## Working culture
