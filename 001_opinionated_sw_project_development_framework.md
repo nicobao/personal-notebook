@@ -119,7 +119,7 @@ There are 6 types of meetings, each with their specific purpose.
 
 - Start working at 09:00. Review code of others until 09:30.
 - 09:30 => daily meeting until 10:00. 
-- 10:00 to end of day => get your shit done. Create a DRAFT PR for your issue and link to the issue. Set up meetings with relevant people if and only if it's not necessary to fix it otherwise. Staging must be deployed automatically everytime a PR is merged to main. It must represent the latest development work and tested immediately.
+- 10:00 to end of day => get your shit done. Create a DRAFT PR for your issue and link to the issue. Set up meetings with relevant people if and only if it's not necessary to fix it otherwise. Staging must be deployed automatically everytime a PR is merged to main. It must represent the latest development work and be tested immediately.
 - end of the day => push work-in-progress code. It doesn't matter if it doesn't build. It's important to allow code reviews and for other to find architectural mistakes before too much work has been done.
 
 ## What to do when there is an emergency and people are on holiday/unavailable in their calendar?
