@@ -84,7 +84,7 @@ The identities of the leader/secretary are assigned successively to each team pa
 
 ### Meetings
 
-There are 6 types of planned meetings, each with their specific purpose.
+There are 6 types of meetings, each with their specific purpose.
 
 1. Every 3 weeks at the beginning of the sprint:
 	- We do a special start-of-sprint meeting
