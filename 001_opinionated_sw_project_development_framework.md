@@ -50,7 +50,7 @@ https://github.com/features/issues
 ### Usage of calendar
 
 Everyone must keep up to date the shared calendar and put there:
-- their availibilities for one-to-one meeting
+- their availibilities for 
 - the time when they are concentrated on work and should not be interrupted
 - the time when they are off
 
@@ -80,12 +80,12 @@ For every sprints there are:
 
 The leader role is:
 - to make sure the process is respected
-- to lead the planned sprint-specific meetings
+- to lead the planned [sprint-specific meetings](#planned-sprint-specific-meetings)
 
 #### The secretary 
 
 The secretary role is:
-- to take notes during each planned sprint-specific meetings and put them on Github Discussions
+- to take notes during each planned [sprint-specific meetings](#planned-sprint-specific-meetings) and put them on Github Discussions
 
 The identities of the leader/secretary are assigned successively to each team participant in turn.
 
@@ -106,9 +106,10 @@ There are 6 types of meetings, each with their specific purpose.
 		- We must leave space for uncertainties. Urgent issues may be added to the plan during the sprints.
 		- We must take into consideration all the duties that's not directly related to the product. It's easy to forget them (like writing this document, like commuting or installing dependencies on one's computer, fixing issues with one's personal router etc) when planning time.
 
-##### Morning 30 minutes Daily meeting
+##### Daily Stand-up
 
-- Every day in the morning at 09:30 CEST. Except when there is a start-of-sprint or stop-of-sprint meeting.
+- Every day. Does not take place when there is already a start-of-sprint or stop-of-sprint meeting planned during the day.
+- In the morning ideally. At 09:30am for example. 
 - 30 minutes max. 
 - 5 persons max per meeting. 
 - These meetings have two goals:
@@ -132,7 +133,7 @@ There are 6 types of meetings, each with their specific purpose.
 
 #### Other meetings
 
-##### Specific scoped issue-related meeting
+##### Scoped issue-related meeting
 
 Specific meetings to solve specific issue  when async discussions aren't enough - only with stakeholders who are involved in the task at hand. Those are planned in the shared calendar by the one who need help with a _very precise meeting agenda_. The scope shouldn't be "let's just talk". The person who is planning the meeting is responsible for taking the minutes and putting them in the relevant GitHub Issue/Discussions.
 
