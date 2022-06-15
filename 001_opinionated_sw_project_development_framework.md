@@ -7,7 +7,7 @@ Status: work-in-progress.
 - GitHub
 - A shared calendar
 - StackOverflow
-- Matrix/Element/Slack/Mattermost
+- Matrix/Element/Slack/Mattermost/IRC (some instant messaging tools with public channels, audio and video calls)
 
 ## Rationale
 
