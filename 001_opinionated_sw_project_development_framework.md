@@ -88,6 +88,7 @@ There are 6 types of meetings, each with their specific purpose.
 
 1. Every 3 weeks at the beginning of the sprint:
 	- We do a special start-of-sprint meeting
+	- This should be the culmination of the three weeks of work from the product team. They should have all most of the use-case/epics/issues already created.
 	- We plan the product features we want to get done in a 1-2 hour long meeting
 		- We assign tasks to people
 		- We put all this information in GitHub (epic/issues/tags/project tables and boards)
@@ -95,6 +96,9 @@ There are 6 types of meetings, each with their specific purpose.
 		- We must take into consideration all the duties that's not directly related to the product. It's easy to forget them (like writing this document, like commuting or installing dependencies on one's computer, fixing issues with one's personal router etc) when planning time.
 1. Morning 30 minutes Daily meeting
 	- 30 minutes max. 
+	- These meetings have two goals:
+		- motivate everyone to wake up in the morning, deliver and create a sense of commitment
+		- give everyone an overall understanding about what others are doing and their throught process. No discussion about issues neither in terms of implementations or features are expected at all. It's one person then the next who present what they do. Discussions, if necessary, will take place later in GitHub issues or, if really necessary in separate sync meetings.
 	- 5 persons max per meeting. 
 	- At the beginning of the meeting, we say hi for 2 minutes.
 	- Then each participant explains in _5 minutes maximum_:
@@ -106,8 +110,7 @@ There are 6 types of meetings, each with their specific purpose.
 1. Specific meetings to solve specific issue  when async discussions aren't enough - only with stakeholders who are involved in the task at hand. Those are planned in the shared calendar by the one who need help with a _very precise meeting agenda_. The scope shouldn't be "let's just talk".
 1. "Coffeee break" type of meetings. Usually around 15 minutes - just to relax and chat. It's important to keep healthy socially...
 1. Every 3 weeks, at the end of the sprint for 1-2 hours:
-	- We do a end-of-sprint meeting.
-	- We close the issues, we discuss the problems.
+	- We close the issues, we close the sprint, we tag in git a stable version and deploy the code in production. We discuss the problems we encountered.
 1. Every 3 weeks at most (optional - on demand):
 	- We discuss long-term vision, issues in a 2 hours meeting
 
@@ -116,7 +119,7 @@ There are 6 types of meetings, each with their specific purpose.
 
 - Start working at 09:00. Review code of others until 09:30.
 - 09:30 => daily meeting until 10:00. 
-- 10:00 to end of day => get your shit done. Create a DRAFT PR for your issue and link to the issue. Set up meetings with relevant people if and only if it's not necessary to fix it otherwise
+- 10:00 to end of day => get your shit done. Create a DRAFT PR for your issue and link to the issue. Set up meetings with relevant people if and only if it's not necessary to fix it otherwise. Staging must be deployed automatically everytime a PR is merged to main. It must represent the latest development work and tested immediately.
 - end of the day => push work-in-progress code. It doesn't matter if it doesn't build. It's important to allow code reviews and for other to find architectural mistakes before too much work has been done.
 
 ## What to do when there is an emergency and people are on holiday/unavailable in their calendar?
