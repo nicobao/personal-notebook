@@ -70,16 +70,22 @@ Everyone must keep up to date the shared calendar and put there:
 
 Agile development licycle has a lot of upsides. Let's keep that. We work in batches of 3 weeks long sprints.
 
+### Sprint-specific roles 
+
 For every sprints there are:
   - A leader
   - A secretary
 
+#### The leader
+
 The leader role is:
 - to make sure the process is respected
-- to lead the meetings
+- to lead the planned sprint-specific meetings
+
+#### The secretary 
 
 The secretary role is:
-- to take notes during each meetings and put them on Github Discussions
+- to take notes during each planned sprint-specific meetings and put them on Github Discussions
 
 The identities of the leader/secretary are assigned successively to each team participant in turn.
 
@@ -87,7 +93,9 @@ The identities of the leader/secretary are assigned successively to each team pa
 
 There are 6 types of meetings, each with their specific purpose.
 
-#### Start-of-sprint meeting
+#### Planned sprint-specific meetings
+
+##### Start-of-sprint meeting
 
 - Every 3 weeks on Monday morning which marks the beginning of the sprint
 - 1-2 hours long
@@ -98,7 +106,7 @@ There are 6 types of meetings, each with their specific purpose.
 		- We must leave space for uncertainties. Urgent issues may be added to the plan during the sprints.
 		- We must take into consideration all the duties that's not directly related to the product. It's easy to forget them (like writing this document, like commuting or installing dependencies on one's computer, fixing issues with one's personal router etc) when planning time.
 
-#### Morning 30 minutes Daily meeting
+##### Morning 30 minutes Daily meeting
 
 - Every day in the morning at 09:30 CEST. Except when there is a start-of-sprint or stop-of-sprint meeting.
 - 30 minutes max. 
@@ -114,15 +122,7 @@ There are 6 types of meetings, each with their specific purpose.
 		- What they are going to do today 
 	- At the end of the meeting, we take 2 minutes to talk about what will be discussed tomorrow. 
 
-#### Specific scoped issue-related meeting
-
-Specific meetings to solve specific issue  when async discussions aren't enough - only with stakeholders who are involved in the task at hand. Those are planned in the shared calendar by the one who need help with a _very precise meeting agenda_. The scope shouldn't be "let's just talk". The person who is planning the meeting is responsible for taking the minutes and putting them in the relevant GitHub Issue/Discussions.
-
-#### Coffee break meeting
-
-Usually around 15 minutes - just to relax and chat. It's important to keep healthy socially...
-
-#### End-of-sprint meeting
+##### End-of-sprint meeting
 
 - Every 3 weeks, on Thursday morning which marks the end of the sprint 
 - It lasts 1-2 hours:
@@ -130,8 +130,18 @@ Usually around 15 minutes - just to relax and chat. It's important to keep healt
 - We tag in git a stable version and deploy the code in production. That's why we don't do it on Friday.
 - The day after, on Friday, is an off-sprint day which is left for correcting bugs if there are issues after deployment on production - or working on things that we usually don't have the time to work on
 
+#### Other meetings
 
-#### Organizational/large-scope meetings
+##### Specific scoped issue-related meeting
+
+Specific meetings to solve specific issue  when async discussions aren't enough - only with stakeholders who are involved in the task at hand. Those are planned in the shared calendar by the one who need help with a _very precise meeting agenda_. The scope shouldn't be "let's just talk". The person who is planning the meeting is responsible for taking the minutes and putting them in the relevant GitHub Issue/Discussions.
+
+##### Coffee break meeting
+
+Usually around 15 minutes - just to relax and chat. It's important to keep healthy socially...
+
+
+##### Organizational/large-scope meetings
 
 - Every 3 weeks at most (optional - on demand):
 - We discuss long-term vision, any issues in a X hours meeting
