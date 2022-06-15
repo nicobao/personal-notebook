@@ -53,7 +53,7 @@ Everyone must keep up to date the shared calendar and put there:
 - avoid it at all cost for things related to issues/product. Prefer writing in the relevant GitHub issue.
 - prefer GitHub discussions for something related to the project that doesn't fit into one particular issue
 - use it only when absolutely necessary.
-- When using instant messaging tool, prefer public channels if what you write are interesting for others (which is the case 90% of the time)
+- when using instant messaging tool, prefer public channels if what you write are interesting for others (which is the case 90% of the time)
 
 ## Usage of StackOverflow
 
