@@ -1,6 +1,6 @@
 ## My opinionated software project development guideline
 
-Status: work-in-progress.
+Status: 1.0.
 
 ## Tools
 
