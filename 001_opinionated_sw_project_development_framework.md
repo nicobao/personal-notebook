@@ -121,11 +121,11 @@ There are 6 types of meetings, each with their specific purpose.
 
 ## What to do when there is an emergency and people are on holiday/unavailable in their calendar?
 
-If there is an emergency and you absolutely need to contact someone who's on holiday or who's unavailable in their calendar: _call them_.
+If there is an emergency and you absolutely need to contact someone who's on holiday or who's unavailable in their calendar: *call them*.
 
-Do NOT use text message or email for emergency. Otherwise it creates an unecessary stress for people who are supposed to relax. They have to constantly check their messaging app in case of an emergency. It's not healthy and leads to burnout.
+_DO NOT USE TEXT MESSAGE_ or email for emergency. Otherwise it creates an unecessary stress for people who are supposed to relax. They have to constantly check their messaging app in case of an emergency. It's not healthy and leads to burnout.
 
-ONLY CALL when there is an emergency. And only for emergency.
+_USE CALL ONLY_ when there is an emergency. And only for emergency.
 
 When you're away mute your messaging app. Only keep your phone in case someone calls you for an emergency. Nobody calls you? Then you can just chill out.
 
