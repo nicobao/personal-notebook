@@ -26,7 +26,7 @@ Status: work-in-progress.
 
 ## Usage of GitHub
 
-Tools like Jira are unecessary. GitHub already contain project/product management tools:
+Tools like Jira are unecessary. GitHub already contains project/product management tools:
 https://github.com/features/issues
 
 - the #1 source of truth
