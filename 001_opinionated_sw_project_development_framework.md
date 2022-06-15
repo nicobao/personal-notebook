@@ -119,7 +119,7 @@ There are 6 types of meetings, each with their specific purpose.
 - 10:00 to end of day => get your shit done. Create a DRAFT PR for your issue and link to the issue. Set up meetings with relevant people if and only if it's not necessary to fix it otherwise
 - end of the day => push work-in-progress code. It doesn't matter if it doesn't build. It's important to allow code reviews and for other to find architectural mistakes before too much work has been done.
 
-## What to do when ther is an emergency/people are away
+## What to do when there is an emergency and people are on holiday/unavailable in their calendar?
 
 If there is an emergency and you absolutely need to contact someone who's on holiday or who's unavailable in their calendar: _call them_.
 
