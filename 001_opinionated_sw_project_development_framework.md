@@ -5,7 +5,7 @@ Status: 1.3.
 ## Rationale
 
 - Every stakeholder in the development of the project must produce something. Either documentation or code. Documentation is as important as code. Documentation for everything not just code: product, strategy etc.
-- Nobody should hold knowledge for themselves and be irreplacable. That's bad for the survival of the project.
+- Nobody should hold knowledge for themselves and be irreplaceable. That's bad for the survival of the project.
 - It's not faster to talk than to write. Maybe when writing it feels long. But we save time at the end, and quality. A lot is lost in translation, a lot is forgotten. Most misunderstanding comes from oral discussions. We think the other person understands us but they don't.
 - Writing has the added benefit of generating documentation.
 - Async first. People aren't in the same timezone eventually. People aren't available at the same time.
