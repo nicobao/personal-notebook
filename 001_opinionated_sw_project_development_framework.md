@@ -48,8 +48,8 @@ Typical day of work:
 Usage of instant messaging (Slack/Matrix etc):
 - avoid it at all cost for things related to issues/product. Prefer writing in the relevant GitHub issue.
 - prefer GitHub discussions for something related to the project that doesn't fit into one particular issue
-- use it only when aboslutely necessary.
-- When using instant messaging tool, prefer DM ONLY if the things you write aren't interesting for others
+- use it only when absolutely necessary.
+- When using instant messaging tool, prefer public channels if what you write are interesting for others (which is the case 90% of the time)
 
 Usage of StackOverflow:
 - when a question is asked about something unrelated to the specific work at hand, but is rather a question of technology in general, use StackOverflow, and respond there.
