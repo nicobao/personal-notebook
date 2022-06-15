@@ -76,6 +76,8 @@ For every sprints there are:
   - A leader
   - A secretary
 
+The identities of the leader/secretary are assigned successively to each team participant in turn.
+
 #### The leader
 
 The leader role is:
@@ -86,8 +88,6 @@ The leader role is:
 
 The secretary role is:
 - to take notes during each planned [sprint-specific meetings](#planned-sprint-specific-meetings) and put them on Github Discussions
-
-The identities of the leader/secretary are assigned successively to each team participant in turn.
 
 ### Meetings
 
