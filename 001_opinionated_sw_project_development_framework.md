@@ -58,6 +58,7 @@ Everyone must keep up to date the shared calendar and put there:
 ## Usage of StackOverflow
 
 - when a question is asked about something unrelated to the specific work at hand, but is rather a question of technology in general, use StackOverflow, and respond there.
+- list relevant StackOverflow questions in the documentation on GitHub (on some readme page or in the wiki)
 
 ## Where to put documentation?
 - on the GitHub monorepo's READMEs
