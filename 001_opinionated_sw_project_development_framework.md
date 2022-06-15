@@ -97,10 +97,10 @@ There are 6 types of meetings, each with their specific purpose.
 		- We must take into consideration all the duties that's not directly related to the product. It's easy to forget them (like writing this document, like commuting or installing dependencies on one's computer, fixing issues with one's personal router etc) when planning time.
 1. Morning 30 minutes Daily meeting
 	- 30 minutes max. 
+	- 5 persons max per meeting. 
 	- These meetings have two goals:
 		- motivate everyone to wake up in the morning, deliver and create a sense of commitment
 		- give everyone an overall understanding about what others are doing and their throught process. No discussion about issues neither in terms of implementations or features are expected at all. It's one person then the next who present what they do. Discussions, if necessary, will take place later in GitHub issues or, if really necessary in separate sync meetings.
-	- 5 persons max per meeting. 
 	- At the beginning of the meeting, we say hi for 2 minutes.
 	- Then each participant explains in _5 minutes maximum_:
 		- What they did yesterday. Without getting into the dirty details. Sharing important info such as "I chose this architecture, it is documented here. For those who are interested, respond to the issue or let's organize a call later."
