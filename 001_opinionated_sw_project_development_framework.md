@@ -157,7 +157,7 @@ Usually around 15 minutes - just to relax and chat. It's important to keep healt
 
 - Start working at 09:00. Review code of others until 09:30.
 - 09:30 => daily meeting until 10:00. 
-- 10:00 to end of day => get your shit done. Create a DRAFT PR for your issue and link to the issue. Set up meetings with relevant people if and only if it's not necessary to fix it otherwise. Staging must be deployed automatically everytime a PR is merged to main. It must represent the latest development work and be tested immediately.
+- 10:00 to end of day => get your shit done. Create a DRAFT PR for your issue and link to the issue. Set up meetings with relevant people if and only if it's not possible to fix it otherwise.
 - end of the day => push work-in-progress code. It doesn't matter if it doesn't build. It's important to allow code reviews and especially for others to find architectural mistakes before too much work has been done.
 
 ### What to do when there is an emergency and people are on holiday/unavailable in their calendar?
@@ -172,6 +172,6 @@ When you're away or in "concentrating-mode", mute your messaging app. Only keep 
 
 ### Can you send people messages when there are unavailable?
 
-YES, you should. For anything that's not an emergency. Open issues, tag them, respond to their GitHub issues. Send them text on instant messaging app if you want. But, don't expect a response *right now*.
+YES, you should. For anything that's not an emergency. Open issues, tag them, respond to their GitHub issues. Send them text on instant messaging app if you want. But, don't expect a response until they are back.
 
 It's up to the responsibility of the person that's away to cut off notifications when they are away/concentrating.
