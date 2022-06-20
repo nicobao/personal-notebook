@@ -36,7 +36,7 @@ This is very useful in case of a GitHub security breach, like this one:
 
 [Follow this guide](https://docs.github.com/en/authentication/managing-commit-signature-verification) to configure your PGP keys on GitHub.
 
-## `gitconfig`
+## `~/.gitconfig`
 
 Replace the mergetool `cmd` with your tool of choice (`code` or `idea` or whatever IDE/Text editor you use).
 Doing so, it will open your favorite editor when you happen to have to resolve git conflicts after throwing a git command to your terminal.
