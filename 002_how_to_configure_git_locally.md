@@ -16,7 +16,7 @@ We just need to activate it.
 	- `cd temp-git`
 	- `git init`
 1. Enable git templates
-	- `git config --global init.templatedirs '~/.git-templates`
+	- `git config --global init.templatedirs '~/.git-templates'`
 1. Create a directory to hold the global hooks:
 	- `mkdir -p ~/.git-templates/hooks`
 1. Copy the `pre-commit.sample` hook to the global hooks directory:
