@@ -12,20 +12,20 @@ This is solved by using the pre-existing `pre-commit` git hook.
 We just need to activate it.
 
 1. If there is no existing git repository on your machine, create one using the following commands:
-	- `mkdir temp-git`
-	- `cd temp-git`
+	- `mkdir my-git-repository`
+	- `cd my-git-repository`
 	- `git init`
 1. Enable git templates
 	- `git config --global init.templatedirs '~/.git-templates'`
 1. Create a directory to hold the global hooks:
 	- `mkdir -p ~/.git-templates/hooks`
-1. Copy the `pre-commit.sample` hook to the global hooks directory:
-	- `cp temp-git/.git/hooks/pre-commit.sample ~/.git-templates/hooks/pre-commit`
+1. Copy the `pre-commit.sample` hook from your local `my-git-repository` directory to the global hooks directory:
+	- `cp my-git-repository/.git/hooks/pre-commit.sample ~/.git-templates/hooks/pre-commit`
 1. Make sure the hook is executable
 	- `ls -lrt ~/.git-templates/hooks`
 	- `chmod 755 ~/.git-templates/hooks/pre-commit`
 1. Re-initialize git in each existing repo you'd like to use the global hooks in:
-	- `cd temp-git`
+	- `cd my-git-repository`
 	- `git init`
 
 ## SSH Keys
