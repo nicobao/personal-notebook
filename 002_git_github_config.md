@@ -8,25 +8,16 @@ For git workflow, including rebase and such - see another document (TODO).
 By default git will allow you to commit conflicts that have not been fixed!
 It's a very common scenario, especially when going through long merge/rebase.
 
-This is solved by using the pre-existing `pre-commit` git hook.
-We just need to activate it.
+What if we could prevent that from happening? This is solved by using a `pre-commit` git hook.
 
-1. If there is no existing git repository on your machine, create one using the following commands:
-	- `mkdir my-git-repository`
-	- `cd my-git-repository`
-	- `git init`
-1. Enable git templates
-	- `git config --global init.templatedirs '~/.git-templates'`
-1. Create a directory to hold the global hooks:
-	- `mkdir -p ~/.git-templates/hooks`
-1. Copy the `pre-commit.sample` hook from your local `my-git-repository` directory to the global hooks directory:
-	- `cp my-git-repository/.git/hooks/pre-commit.sample ~/.git-templates/hooks/pre-commit`
-1. Make sure the hook is executable
-	- `ls -lrt ~/.git-templates/hooks`
-	- `chmod 755 ~/.git-templates/hooks/pre-commit`
-1. Re-initialize git in each existing repo you'd like to use the global hooks in:
-	- `cd my-git-repository`
-	- `git init`
+We could do that by hand - [like this](https://gist.github.com/maxmarkus/8a81edd58dd65a45731f).
+We can use [`git-templates`](https://coderwall.com/p/jp7d5q/create-a-global-git-commit-hook) to add those hooks globally.
+
+But there is a better way - with already pre-defined handy pre-commit hooks.
+It is also actionnable by the CI:
+
+https://pre-commit.com/
+
 
 ## SSH Keys
 
@@ -36,7 +27,7 @@ Use the [following guide](https://docs.github.com/en/authentication/connecting-t
 
 ## PGP Key and commit verification
 
-If you don't verify your commit with a PGP key, anyone puttin your name and email address in its `.gitconfig` can impersonate you. GitHub will assign the commits to you. 
+If you don't verify your commit with a PGP key, anyone putting your name and email address in its `.gitconfig` can impersonate you. GitHub will assign the commits to you.
 
 If you configure PGP key, they will add the `verify` green flag to all your commits, meaning they were able to cryptographically verify that the owner of your private PGP key has signed it - and nobody else.
 
