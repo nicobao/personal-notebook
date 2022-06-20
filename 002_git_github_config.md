@@ -25,16 +25,16 @@ Don't bother with password and https. Use SSH keys to communicate with GitHub. P
 
 Use the [following guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
-## PGP Key and commit verification
+## GPG Key and commit verification
 
-If you don't verify your commit with a PGP key, anyone putting your name and email address in its `.gitconfig` can impersonate you. GitHub will assign the commits to you.
+If you don't verify your commit with a GPG key, anyone putting your name and email address in its `.gitconfig` can impersonate you. GitHub will assign the commits to you.
 
-If you configure PGP key, they will add the `verify` green flag to all your commits, meaning they were able to cryptographically verify that the owner of your private PGP key has signed it - and nobody else.
+If you configure GPG key, they will add the `verify` green flag to all your commits, meaning they were able to cryptographically verify that the owner of your private GPG key has signed it - and nobody else.
 
 This is very useful in case of a GitHub security breach, like this one: 
-- [GitHub App were able to upgrade to `scope:write` permissions if they were allowed `scope:read` permissions](https://news.ycombinator.com/item?id=31769520). That means that some GitHub App may have been able to push unverified commits associated impersonating any repository's member. Systematically using PGP commit verification and enforcing this as a rule on GitHub allows for mitigating such risks.
+- [GitHub App were able to upgrade to `scope:write` permissions if they were allowed `scope:read` permissions](https://news.ycombinator.com/item?id=31769520). That means that some GitHub App may have been able to push unverified commits associated impersonating any repository's member. Systematically using GPG commit verification and enforcing this as a rule on GitHub allows for mitigating such risks.
 
-[Follow this guide](https://docs.github.com/en/authentication/managing-commit-signature-verification) to configure your PGP keys on GitHub.
+[Follow this guide](https://docs.github.com/en/authentication/managing-commit-signature-verification) to configure your GPG keys on GitHub.
 
 ## `~/.gitconfig`
 
