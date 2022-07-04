@@ -34,10 +34,10 @@ What to do when the production version 1.0.0 requires 1.0.1 but untested ongoing
 1. Merge `hotfix-1.0.0` into `main`. Do NOT delete the branch `hotfix-1.0.0`.
 
 What to do when my work depend on a feature branch waiting to be merged (opened DRAFT PR for example)?
-- Create a branch called for example `my-work` from the other feature branch called `base-feature-branch-name`
-- Open a DRAFT PR that will merge `my-work` into `base-feature-branch-name`
-- Keep doing the same workflow as explained above, except with `base-feature-branch-name` instead of `main`
-- Make sure to merge `my-work` into `base-feature-branch-name` BEFORE merging `base-feature-branch-name` into `main`. If you fail doing so, it's no big deal: just rebase `my-work` to `main` and change the PR target branch to `main`.
+1. Create a branch called for example `my-work` from the other feature branch called `base-feature-branch-name`
+1. Open a DRAFT PR that will merge `my-work` into `base-feature-branch-name`
+1. Keep doing the same workflow as explained above, except with `base-feature-branch-name` instead of `main`
+1. Make sure to merge `my-work` into `base-feature-branch-name` BEFORE merging `base-feature-branch-name` into `main`. If you fail doing so, it's no big deal: just rebase `my-work` to `main` and change the PR target branch to `main`.
 
 ---
 
