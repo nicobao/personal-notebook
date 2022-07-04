@@ -1,7 +1,7 @@
 # Git & GitHub configuration
 
 Some useful tips for git integration and configuration.
-For git workflow, including rebase and such - see another document (TODO).
+For git workflow, including rebase and such - refer to [my opinionated git workflow](https://github.com/nicobao/personal-notebook/blob/main/003_opinionated_git_workflow.md)
 
 ## Git hooks
 
