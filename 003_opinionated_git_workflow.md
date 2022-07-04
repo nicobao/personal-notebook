@@ -27,7 +27,7 @@ Main workflow:
 What to do when the production version 1.0.0 requires 1.0.1 but untested ongoing work has already been merged in main?
 1. `git checkout 1.0.0`
 1. `git checkout -b hotfix-1.0.0`
-1. `git push --set-upstream origin hotfix-1.0.0` - this branch is a `public branch`, not a feature branch.
+1. `git push --set-upstream origin hotfix-1.0.0` - this branch is a public branch, NOT a feature branch.
 1. Send PRs to branch `hotfix-1.0.0` using `fix` in commit message and relying on the workflow described above
 1. Merge PRs to `hotfix-1.0.0`. `hotfix-XXXX` branches should trigger the same CI as `main`, and allow to create tags/releases.
 1. Create release/tag `1.0.1` from the relevant git hash in this branch
