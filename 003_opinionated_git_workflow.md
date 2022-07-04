@@ -17,7 +17,7 @@ Main workflow:
 1. dev owning the feature branch keeps pushing every evening
 1. reviewers keep reviewing every morning
 1. Once PR is ready:
-	1. fixup all commits except the first commit, reword the first commit to the name of the PR, using `git rebase -i origin/main` and edit the commit body to a relately comprehensive and meaningful content. Usage of `conventional commits` is mandatory here. Enforce conventional commits using pre-commit hooks.
+	1. `fixup` all commits except the first commit, `reword` the first commit to the name of the PR, using `git rebase -i origin/main` and edit the commit body to a relately comprehensive and meaningful content. Usage of `conventional commits` is mandatory here. Enforce conventional commits using pre-commit hooks.
 	1. change DRAFT PR to normal PR. The CI automatically runs test on this branch.
 	1. if the tests pass, reviewers make their last review.
 1. Once the PR is reviewed and acceped, the PR is squashed and merged (not rebased) into main
