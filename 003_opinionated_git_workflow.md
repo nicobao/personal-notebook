@@ -41,10 +41,9 @@ What to do when my work depend on a feature branch waiting to be merged (opened 
 
 ---
 
-```
-WARNING!
+`WARNING!`
 I don't recommend doing the following at all, it is generally a bad idea. 99% of the time it is unecessary and cumbersome.
-```
+
 What to do when two development happens simultaneously (experimenting with a complex feature for instance)?
 1. Create a new branch for the experimental dev
 1. Send PRs to that branch and trigger CI as if it was `main`
