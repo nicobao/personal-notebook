@@ -4,7 +4,8 @@ I use a variant of [Trunk-based development](https://platform.deloitte.com.au/ar
 
 ## TL;DR
 
-Main workflow:
+### Main workflow
+
 1. only one public branch: `main`
 1. every start of sprint, we agree on tasks to achieve and the order in which they should be merged
 1. split each task in issues as small as possible. Issues name should follow [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
@@ -24,7 +25,8 @@ Main workflow:
 1. The merge triggers a CI pipeline that will run tests and all sorts of checks, then generate artifacts such binaries or docker images from the code, generate changelog. No tags or GitHub release are generated as the versions are deemed unstable at this point.
 1. At the end of the sprint, after UAT has passed and a version is ready for deployment in production, or whenever the maintainers are happy, maintainers are responsible for manually creating a git tag and associated GitHub Release using [semantic-release](https://github.com/semantic-release/semantic-release). This should be done as a manual job in the CI pipeline - and maintainers would click on it if and only if they want to validate a specific commit version to production. The release will contain all the relevant generated Changelog since the previous tag.
 
-What to do when the production version 1.0.0 requires 1.0.1 but untested ongoing work has already been merged in main?
+### What to do when the production version 1.0.0 requires 1.0.1 but untested ongoing work has already been merged in main?
+
 1. `git checkout 1.0.0`
 1. `git checkout -b hotfix-1.0.0`
 1. `git push --set-upstream origin hotfix-1.0.0` - this branch is a public branch, NOT a feature branch.
@@ -33,7 +35,8 @@ What to do when the production version 1.0.0 requires 1.0.1 but untested ongoing
 1. Create release/tag `1.0.1` from the relevant git hash in this branch
 1. Merge `hotfix-1.0.0` into `main`. Do NOT delete the branch `hotfix-1.0.0`.
 
-What to do when my work depend on a feature branch waiting to be merged (opened DRAFT PR for example)?
+### What to do when my work depend on a feature branch waiting to be merged (opened DRAFT PR for example)?
+
 1. Create a branch called for example `my-work` from the other feature branch called `base-feature-branch-name`
 1. Open a DRAFT PR that will merge `my-work` into `base-feature-branch-name`
 1. Keep doing the same workflow as explained above, except with `base-feature-branch-name` instead of `main`
@@ -41,9 +44,10 @@ What to do when my work depend on a feature branch waiting to be merged (opened 
 
 ---
 
-_WARNING!_ I don't recommend doing the following at all, it is generally a bad idea. 99% of the time it is unecessary and cumbersome.
+### What to do when two development happens simultaneously (experimenting with a complex feature for instance)?
 
-What to do when two development happens simultaneously (experimenting with a complex feature for instance)?
+_WARNING!_ I don't recommend doing this at all, it is generally a bad idea. 99% of the time it is unecessary and cumbersome.
+
 1. Create a new branch for the experimental dev
 1. Send PRs to that branch and trigger CI as if it was `main`
 1. Keep going with the normal workflow for the rest of the development
