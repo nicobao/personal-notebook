@@ -27,11 +27,11 @@ Main workflow:
 What to do when the production version 1.0.0 requires 1.0.1 but untested ongoing work has already been merged in main?
 1. `git checkout 1.0.0`
 1. `git checkout -b hotfix-1.0.0`
-1. `git push --set-upstream origin hotfix-1.0.0` - this branch is a public branch, not a feature branch.
+1. `git push --set-upstream origin hotfix-1.0.0` - this branch is a `public branch`, not a feature branch.
 1. Send PRs to branch `hotfix-1.0.0` using `fix` in commit message and relying on the workflow described above
 1. Merge PRs to `hotfix-1.0.0`. `hotfix-XXXX` branches should trigger the same CI as `main`, and allow to create tags/releases.
 1. Create release/tag `1.0.1` from the relevant git hash in this branch
-1. Merge `hotfix-1.0.0` into `main`. Do not delete the branch `hotfix-1.0.0`.
+1. Merge `hotfix-1.0.0` into `main`. Do NOT delete the branch `hotfix-1.0.0`.
 
 What to do when my work depend on a feature branch waiting to be merged (opened DRAFT PR for example)?
 - Create a branch called for example `my-work` from the other feature branch called `base-feature-branch-name`
@@ -47,6 +47,6 @@ What to do when two development happens simultaneously (experimenting with a com
 1. Create a new branch for the experimental dev
 1. Send PRs to that branch and trigger CI as if it was `main`
 1. Keep going with the normal workflow for the rest of the development
-1. Eventually merge the experiemental branch into main
+1. Eventually merge the experimental branch into main
 
 
