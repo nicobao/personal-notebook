@@ -13,7 +13,7 @@ I use a variant of [Trunk-based development](https://platform.deloitte.com.au/ar
 	- Only 1 dev per PR. 
 	- Only 1 dev per branch. 
 	- Each PR addresses 1 issue only. 
-	- If the PR relates to the issue `11`, call the feature branch `fix/context/11` depending on issue name
+	- If the PR relates to the issue `11`, call the feature branch `fix-context-11` depending on issue name
 1. on the feature branch, `git pull --rebase origin main` or `git rebase -i origin/main` then `git push --force-with-lease` every morning to fix merge conflicts
 1. dev owning the feature branch keeps pushing every evening
 1. reviewers keep reviewing every morning
