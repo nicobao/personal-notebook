@@ -15,7 +15,7 @@ I use a variant of [Trunk-based development](https://platform.deloitte.com.au/ar
 	- Each PR addresses 1 issue only. 
 	- If the PR relates to the issue `11`, call the feature branch `fix-context-11` depending on issue name
 1. on the feature branch, `git pull --rebase origin main` or `git rebase -i origin/main` then `git push --force-with-lease` every morning to fix merge conflicts
-1. dev owning the feature branch keeps pushing every evening
+1. dev owning the feature branch keeps pushing every evening (or at least every time some relevant progress has been made)
 1. reviewers keep reviewing every morning
 1. Once PR is ready:
 	1. `fixup` all commits except the first commit, `reword` the first commit to the name of the PR, using `git rebase -i origin/main` and edit the commit body to a relately comprehensive and meaningful content. Usage of `conventional commits` is mandatory here. Enforce conventional commits using pre-commit hooks.
