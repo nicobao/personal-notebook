@@ -39,10 +39,16 @@ What to do when my work depend on a feature branch waiting to be merged (opened 
 - Keep doing the same workflow as explained above, except with `base-feature-branch-name` instead of `main`
 - Make sure to merge `my-work` into `base-feature-branch-name` BEFORE merging `base-feature-branch-name` into `main`. If you fail doing so, it's no big deal: just rebase `my-work` to `main` and change the PR target branch to `main`.
 
-NOTE: I don't recommend doing the following at all, it is generally a bas idea. 99% of the time it is unecessary and cumbersome.
+---
+
+```
+WARNING!
+I don't recommend doing the following at all, it is generally a bad idea. 99% of the time it is unecessary and cumbersome.
+```
 What to do when two development happens simultaneously (experimenting with a complex feature for instance)?
 1. Create a new branch for the experimental dev
 1. Send PRs to that branch and trigger CI as if it was `main`
 1. Keep going with the normal workflow for the rest of the development
 1. Eventually merge the experiemental branch into main
+
 
