@@ -16,7 +16,7 @@ Status: 1.3.
 - We want to build a process that's openable to externals easily.
 - Sync when necessary for a specific purpose and only with the people that are concerned by the issue.
 - Motivate each other by organizing _short_ daily calls in the morning.
-- In general, follow the [Async Manifesto](http://asyncmanifesto.org/)
+- We follow the [Async Manifesto](http://asyncmanifesto.org/) in spirit (the parts exposed in this document supersede the manifesto, e.g: daily meetings & bringing in good sides from Agile development).
 
 ## Tools
 
