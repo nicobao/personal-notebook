@@ -53,6 +53,9 @@ Doing so, it will open your favorite editor when you happen to have to resolve g
 
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    # This will delete all local branches that used to had an upstream remote branch, but the remote branch has been deleted.
+	# See https://stackoverflow.com/a/33548037 for the bash command & https://stackoverflow.com/a/14994923 to embed it in .gitconfig 
+    prune-local-branches = "!f() { git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done ;  }; f"
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [init]
