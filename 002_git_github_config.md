@@ -40,31 +40,14 @@ This is very useful in case of a GitHub security breach, like this one:
 
 Replace the mergetool `cmd` with your tool of choice (`code` or `idea` or whatever IDE/Text editor you use).
 Doing so, it will open your favorite editor when you happen to have to resolve git conflicts after throwing a git command to your terminal.
-```
-[user]
-	email = name@example.com
-	name = Jean Valjean
-[merge]
-	conflictstyle = diff3
-	tool = vimdiff
 
-[mergetool "vimdiff"]
-	cmd = /opt/neovim/nvim.appimage -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
-
-[alias]
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-    # This will delete all local branches that used to had an upstream remote branch, but the remote branch has been deleted.
-	# See https://stackoverflow.com/a/33548037 for the bash command & https://stackoverflow.com/a/14994923 to embed it in .gitconfig 
-    prune-local-branches = "!f() { git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done ;  }; f"
-[url "git@github.com:"]
-	insteadOf = https://github.com/
-[init]
-	templatedir = ~/.git-templates
-```
+[Check out this .gitconfig](https://github.com/nicobao/setup/blob/master/.gitconfig)
 
 The `git lg` alias is pretty handy to have a much cleaner version of `git log`.
 
 The `url` part is very useful if you inadvertendly `git clone https://github.com/jvaljean/some/repository` instead of `git clone git@github.com:jvaljean:some/repository`. It will automatically convert the `https` url into a git-compliant `ssh` url.
+
+I don't see any valid reason when you'd want to use `git pull` in merge mode rather than in rebase mode (see [my workflow](003_opinionated_git_workflow.md)).
 
 ## `.bashrc` or equivalent shell configuration
 
