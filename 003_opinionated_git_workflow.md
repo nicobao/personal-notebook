@@ -33,14 +33,22 @@ I use a variant of [Trunk-based development](https://platform.deloitte.com.au/ar
 1. Send PRs to branch `hotfix-1.0.0` using `fix` in commit message and relying on the workflow described above
 1. Merge PRs to `hotfix-1.0.0`. `hotfix-XXXX` branches should trigger the same CI as `main`, and allow to create tags/releases.
 1. Create release/tag `1.0.1` from the relevant git hash in this branch
-1. Merge `hotfix-1.0.0` into `main`. Do NOT delete the branch `hotfix-1.0.0`.
+1. To get the changes to `main` as well:
+	1. Send the same PR to `main` (usually the best choice) OR
+	1. Create a branch `merge-hotfix-1.0.0` from `hotfix-1.0.0`, run `git checkout merge-hotfix-1.0.0 && git merge main`, resolve conflict, merge `merge-hotfix-1.0.0` into `main`, and delete `merge-hotfix-1.0.0`
+1. Do NOT delete the branch `hotfix-1.0.0`.
 
 ### What to do when my work depend on a feature branch waiting to be merged (opened DRAFT PR for example)?
 
-1. Create a branch called for example `my-work` from the other feature branch called `base-feature-branch-name`
-1. Open a DRAFT PR that will merge `my-work` into `base-feature-branch-name`
-1. Keep doing the same workflow as explained above, except with `base-feature-branch-name` instead of `main`
-1. Make sure to merge `my-work` into `base-feature-branch-name` BEFORE merging `base-feature-branch-name` into `main`. If you fail doing so, it's no big deal: just rebase `my-work` to `main` and change the PR target branch to `main`.
+If it's a feature branch then it will rebased to main frequently, you can't work on it as if it was a public branch. Do NOT do this:
+	1. Create a branch called for example `my-work` from the other feature branch called `base-feature-branch-name`
+	1. Open a DRAFT PR that will merge `my-work` into `base-feature-branch-name`
+	1. Keep doing the same workflow as explained above, except with `base-feature-branch-name` instead of `main`
+	1. Make sure to merge `my-work` into `base-feature-branch-name` BEFORE merging `base-feature-branch-name` into `main`. If you fail doing so, it's no big deal: just rebase `my-work` to `main` and change the PR target branch to `main`.
+
+Instead:
+- commit together in the same branch (bad idea), OR:
+- simply don't do that. Divide the feature in smaller chunks that is dispatched between different people and independent between each other.
 
 ---
 
