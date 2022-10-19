@@ -56,7 +56,7 @@ This approach is by far the best but it comes with one big limitation:
 
 ## API Gateway
 
-You _do not_ need GraphQL to abstract your microservices using a Public API, [unlike what some people think](https://youtu.be/aceYBBW5mz8?t=7389).
+You _do not_ need GraphQL to abstract your microservices API complexity in your Public API, [unlike what some people think](https://youtu.be/aceYBBW5mz8?t=7389).
 
 GraphQL happens to force you to use a specific implementation of the [API Gateway pattern](https://microservices.io/patterns/apigateway.html):
 
