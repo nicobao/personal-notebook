@@ -54,6 +54,23 @@ Generate everything from it:
 This approach is by far the best but it comes with one big limitation:
 - sometimes the tooling just isn't there
 
+## API Gateway
+
+You _do not_ need GraphQL to abstract your microservices using a Public API, [unlike what some people think](https://youtu.be/aceYBBW5mz8?t=7389).
+
+GraphQL happens to force you to use a specific implementation of the [API Gateway pattern](https://microservices.io/patterns/apigateway.html):
+
+```mermaid
+graph TD
+	User-->|Public API|APIGateway
+	APIGateway-->|Specific Internal API|BillingService
+	APIGateway-->|Specific Internal API|DashboardService
+	APIGateway-->|Specific Internal API|PaymentService
+```
+
+Here I am discussing choosing the API Technology for the `Public API`. It can be GraphQL, but it can also be another technology.
+
+
 ## API Technologies (and their schema)
 
 ### REST (OpenAPI)
@@ -196,7 +213,7 @@ In the frontend, you just say which data you want, and you don't care about how 
 
 #### Advantages
 
-- you can choose exactly which data you need from the frontend, which avoids underfetching or overfetching. This is not easy with any of the other options.
+- you can choose exactly which data you need from the frontend, which avoids underfetching or overfetching. This is not easy with any of the other options. The frontend story, when it works, is pretty pleasant.
 - statically typed with the schema (api discovery, code generation, documentation). This is solved by OpenAPI in REST.
 
 ##### Disadvantages
