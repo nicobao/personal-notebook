@@ -7,7 +7,7 @@ I'd use either:
 - protobuf + gRPC + buf
 
 The reason is:
-- the tooling is great for an api-first approach to designing APIs. One trusted statically typed source of truth which is the OpenAPI/AsyncAPI documents or the .proto files - at then everything compiles from it: documentation and client/server code in any languages you like
+- the tooling is great for an api-first approach to designing APIs. One unique statically typed source of truth which is the OpenAPI/AsyncAPI documents or the .proto files - at then everything compiles from it: documentation and client/server code in any languages you like
 - both solutions support bidirectional communication
 
 ## Intro
