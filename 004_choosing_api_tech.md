@@ -227,6 +227,9 @@ In the frontend, you just say which data you want, and you don't care about how 
 - error responses are not standardized and not explicit
 - subscribtions (~WebSocket for GraphQL) is very complex
 - GraphQL relay is solving problems for large-scale applications, which most of us aren't dealing with
+- rate-limiting, authentication, telemetry are complex to implement
+
+Basically GraphQL is a black-box API Gateway. Explicit is better than implicit, and the benefits do not counter balance the drawbacks, that's why I don't like GraphQL.
 
 ### gRPC (protobuf and buf)
 
@@ -252,5 +255,5 @@ gRPC has [built-in](https://github.com/grpc/grpc-go/blob/master/Documentation/gr
 Weaknesses:
 - Client-side and Bi-directional streaming are not currently supported in the browser. [Only Unary and Server-side streamings are](https://github.com/grpc/grpc-web#make-a-unary-rpc-call)
 - in general running gRPC in a browser [requires a proxy such as Envoy to translate HTTP/1.1 request from the browser to HTTP/2 request in the backend ](https://github.com/grpc/grpc-web/blob/master/net/grpc/gateway/examples/echo/tutorial.md#configure-the-envoy-proxy)
-- the messages themselves are not human reable (it's binary)
+- the messages themselves are not human readable (it's binary)
 - not suitable for real-time communication - but it's not the purpose here anyway
