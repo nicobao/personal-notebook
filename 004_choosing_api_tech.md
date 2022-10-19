@@ -148,7 +148,7 @@ The goal of this technology is to provide a mechanism for browser-based
    XMLHttpRequest or <iframe>s and long polling).
 ```
 
-WebSocket is fundamentally complementary to REST. If you need some sort of publish/subscribe mechanism (that's not streaming - otherwise go for WebRTC), then you need WebSocket.
+WebSocket is fundamentally complementary to REST. If you need some sort of publish/subscribe mechanism (that's not streaming - otherwise go for WebRTC), then you need WebSocket. One drawback is that authentication/authorization isn't standardized.
 
 [AsyncAPI](https://www.asyncapi.com/) is the OpenAPI equivalent of WebSocket. It is not limited to WebSocket though, but to every event-driven ("publish-subscribe") sort of transports. It's also a JSON Schema. It was written to be [as compatible with OpenAPI as possible](https://www.asyncapi.com/docs/reference/specification/v2.5.0). So much that there are converters from one spec to the other.
 
@@ -162,8 +162,6 @@ Like OpenAPI, AsyncAPI comes with bunch of tools:
 - [Modelina](https://www.asyncapi.com/tools/modelina). It's a type generator based on the API schema. Fortunately, AsyncAPI Modelina covers a much wider variety of languages, but only generates `types`, and not the whole transport layer. It is not ideal, but it is often enough.
 
 The API-first workflow is [supported](https://www.asyncapi.com/blog/websocket-part3). [Documentation and tutorials are good quality](https://www.asyncapi.com/blog/websocket-part1).
-
-One drawback is that authentication/authorization isn't standardized.
 
 ### JSON-RPC (OpenRPC)
 
