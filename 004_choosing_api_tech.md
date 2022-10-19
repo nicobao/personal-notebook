@@ -64,8 +64,11 @@ GraphQL happens to force you to use a specific implementation of the [API Gatewa
 graph TD
 	User-->|Public API|APIGateway
 	APIGateway-->|Specific Internal API|BillingService
+	BillingService-->BillingServiceDB
 	APIGateway-->|Specific Internal API|DashboardService
+	DashboardService-->DashboardServiceDB
 	APIGateway-->|Specific Internal API|PaymentService
+	PaymentService-->PaymentServiceDB
 ```
 
 Here I am discussing choosing the API Technology for the `Public API`. It can be GraphQL, but it can also be another technology.
