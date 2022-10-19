@@ -202,7 +202,7 @@ That being said - maybe OpenAPI can be reused for JSON-RPC as long as HTTP is us
 
 ### GraphQL (and its GraphQL Schema)
 
-_TL;DR:_ GraphQL is an interesting option for large-scale applications that have to deal with a large amount of microservices (hint: 99% of us are not in this situation). And even for such organizations - I doubt its usefulness. Some of the problems REST has that GraphQL solves are already solved by OpenAPI - but without the problems that GraphQL brings to the table (and they are numerous). In general I understand the initial appeal, but after diving in I am convinced that GraphQL is a wrong good idea that can be very costly in the long run.
+_TL;DR:_ GraphQL is an interesting option for large-scale applications that have to deal with a large amount of microservices (hint: 99% of us are not in this situation). And even for such organizations - I doubt its usefulness. Some of the problems REST has that GraphQL solves are already solved by OpenAPI - but without the problems that GraphQL brings to the table (and they are numerous). In general I understand the initial appeal, but after diving in I am convinced that GraphQL is a false good idea that can be very costly in the long run.
 
 Much of the analysis comes from [this video](https://www.youtube.com/watch?v=S1wQ0WvJK64) which I pretty much agree with (for the things I know personally, but the rest makes sense too). His views seem to be shared by many people in the community.
 
