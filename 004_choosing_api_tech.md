@@ -7,7 +7,7 @@ I'd use either:
 - protobuf + gRPC + buf
 
 The reason is:
-- the tooling is great for an api-first approach to designing APIs. One trusted statically typed source of truth which is the OpenAPI/AsyncAPI documents or the .proto files - and then everything compiles from it: documentation and client/server code in any languages you like
+- the tooling is great for an api-first approach to designing APIs. One trusted statically typed source of truth which is the OpenAPI/AsyncAPI documents or the .proto files - at then everything compiles from it: documentation and client/server code in any languages you like
 - both solutions support bidirectional communication
 
 ## Intro
@@ -84,9 +84,9 @@ One thing to be noted is that with `openapi-generator` you can generate `statica
 Meaning for example if you have this API endpoint described in your JSON Schema:
 
 ```md
-- Description of the CID type.
+- Description of the `CID` type.
 GET proposal/:address:
-   - Description of the expected JSON response in a type.
+   - Description of the expected JSON response in a type called `GetProposalByAddressResponseDTO`.
    - Query params (name - type):
       - latest - boolean
       - cids - List[CID]
@@ -112,7 +112,7 @@ This is very important to remember, because one of the #1 advantage people say G
 Drawbacks of REST:
 - it doesn't have publish/subscribe, you need to use Websocket for that
 - it is not easy to avoid underfetching or overfetching
-- with JSON as body, REST is relatively slow as opposed to something like gRPC. That being said, protobuf can be used with REST in HTTP body directly to optimize for speed, and JSON is usually fast _enough_
+- with JSON as body, REST is relatively slow as opposed to something like gRPC. That being said, binary and protobuf can be used with REST in HTTP body directly to optimize for speed, and JSON is usually fast _enough_
 - that's pretty much it because OpenAPI and documentation / code generation solve the other issues (API discovery, lack of schema and static typing)
 
 ### Websocket (AsyncAPI)
@@ -143,6 +143,8 @@ Like OpenAPI, AsyncAPI comes with bunch of tools:
 
 The API-first workflow is [supported](https://www.asyncapi.com/blog/websocket-part3). [Documentation and tutorials are good quality](https://www.asyncapi.com/blog/websocket-part1).
 
+One drawback is that authentication/authorization isn't standardized.
+
 ### JSON-RPC (OpenRPC)
 
 [JSON-RPC](https://www.jsonrpc.org/) is very easy to use and to understand, and yet powerful:
@@ -167,6 +169,7 @@ I like JSON-RPC. I wish it was the #1 web standard instead of REST. It's much ea
 Besides, REST is bound to HTTP - but JSON-RPC is transport-agnostic. JSON-RPC only defines the application-level protocol (the JSON Schema to be sent over some transport layer). JSON-RPC can also be used over WebSocket or raw TCP / UDP. JSON-RPC is still bount to JSON and its relatively poor performance though, it doesn't have an Intermediary Description Language (IDL) like other RPC out there, which would enable this decoupling. But it's not JSON-RPC goal. JSON-RPC is designed to be simple.
 
 [This article](https://dev.to/radixdlt/json-rpc-vs-rest-for-distributed-platform-apis-3n0m) summarizes well why JSON-RPC is a superior approach to REST.
+A drawback is that caching in REST is straightforward as every endpoint are different. With JSON-RPC, it's a little trickier.
 
 Unfortunately, the standardization and tooling story around JSON-RPC are lacking behind.
 
@@ -181,9 +184,9 @@ That being said - maybe OpenAPI can be reused for JSON-RPC as long as HTTP is us
 
 ### GraphQL (and its GraphQL Schema)
 
-TL;DR: GraphQL is an interesting option for large-scale applications that have to deal with a large amount of microservices (hint: 99% of us are not in this situation). And even for such organizations - I doubt its usefulness. Some of the problems REST has that GraphQL solves are already solved by OpenAPI - but without the problems that GraphQL brings to the table (and they are numerous). In general I understand the initial appeal, but after diving in I am convinced that GraphQL is a wrong good idea that can be very costly in the long run.
+_TL;DR:_ GraphQL is an interesting option for large-scale applications that have to deal with a large amount of microservices (hint: 99% of us are not in this situation). And even for such organizations - I doubt its usefulness. Some of the problems REST has that GraphQL solves are already solved by OpenAPI - but without the problems that GraphQL brings to the table (and they are numerous). In general I understand the initial appeal, but after diving in I am convinced that GraphQL is a wrong good idea that can be very costly in the long run.
 
-Much of the analysis comes from [this analysis](https://www.youtube.com/watch?v=S1wQ0WvJK64) which I pretty much agree with (for the things I know personally, but the rest makes sense too). His seems to be shared by many people in the community.
+Much of the analysis comes from [this video](https://www.youtube.com/watch?v=S1wQ0WvJK64) which I pretty much agree with (for the things I know personally, but the rest makes sense too). His views seem to be shared by many people in the community.
 
 #### What is GraphQL?
 
@@ -201,13 +204,13 @@ In the frontend, you just say which data you want, and you don't care about how 
 - huge complexity especially on the backend
 - plenty of abstract concepts to grasp: query arguments, input arguments, fragments, input types, union types, directives...
 - "new solution creates new problems"
-- performance issues: you can very easily overflow a database with a crazy amount of requests without expecting it. Quote from the video above: "If you have an array of friends, and each friend object has an array of mutual friends, if you don't take into account in your GraphQL Server, you might end up making an exponential amount of requests in your server, because GraphQL fetching is naive. The solution in the GraphQL ecosystem is adding a caching layer between the GraphQL Server and the Database." But caching is very complex. Understand where the performance problems come from is not easy to spot.
-- caching in the frontend is not easy, like it would be for an HTTP Request. You have to use another layer of library to do it.
+- performance issues: you can very easily overflow a database with a crazy amount of requests without expecting it. Quote from the video above: "If you have an array of friends, and each friend object has an array of mutual friends, and if you don't take that into account in your GraphQL Server, you might end up making an exponential amount of requests in your server, because GraphQL fetching is naive. The solution in the GraphQL ecosystem is adding a caching layer between the GraphQL Server and the Database. But caching comes with a cost and is very complex". Understanding where the performance problems come from is not easy to spot.
+- caching in the frontend is not easy, like it would be for an HTTP Request. You have to use specialized libraries to do it.
 - error responses are not standardized and not explicit
-- subscribtions (publish/subscribe WebSocket for GraphQL) is very complex
+- subscribtions (~WebSocket for GraphQL) is very complex
 - GraphQL relay is solving problems for large-scale applications, which most of us aren't dealing with
 
-### gRPC (buf)
+### gRPC (protobuf and buf)
 
 In gRPC, you define your API in a statically typed Intermediary Definition Language (IDL) named Protobuf. You define types and functions which are Remote Procedure Calls (RPC). It's a little bit like the Schema for your API.
 
@@ -215,7 +218,7 @@ gRPC uses HTTP/2, data is sent in binary format and hence gRPC is the fastest AP
 
 gRPC allows for Unary, Client, Server and Bidirectional streaming.
 
-`buf` is the tool for:
+[buf](https://docs.buf.build/introduction) is the tool for:
 - generating code (pretty comprehensive here, and golang is supported)
 - doing versioning and in particular spotting breaking changes
 - storing the api in a special public repository
