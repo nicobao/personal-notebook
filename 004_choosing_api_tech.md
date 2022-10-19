@@ -166,14 +166,14 @@ It is quite a niche technology. It is mainly used by:
 
 I like JSON-RPC. I wish it was the #1 web standard instead of REST. It's much easier not to have to worry about choosing HTTP Method, or between query param / path param / body.
 
-Besides, REST is bound to HTTP - but JSON-RPC is transport-agnostic. JSON-RPC only defines the application-level protocol (the JSON Schema to be sent over some transport layer). JSON-RPC can also be used over WebSocket or raw TCP / UDP. JSON-RPC is still bount to JSON and its relatively poor performance though, it doesn't have an Intermediary Description Language (IDL) like other RPC out there, which would enable this decoupling. But it's not JSON-RPC goal. JSON-RPC is designed to be simple.
+Besides, REST is bound to HTTP - but JSON-RPC is transport-agnostic. JSON-RPC only defines the application-level protocol (the JSON Schema to be sent over some transport layer). JSON-RPC can also be used over WebSocket or raw TCP / UDP. JSON-RPC is still bound to JSON and its relatively poor performance. JSON-RPC doesn't have an Intermediary Description Language (IDL) like other RPC out there, which would enable this decoupling. But that's not JSON-RPC goal. JSON-RPC is designed to be simple.
 
 [This article](https://dev.to/radixdlt/json-rpc-vs-rest-for-distributed-platform-apis-3n0m) summarizes well why JSON-RPC is a superior approach to REST.
 A drawback is that caching in REST is straightforward as every endpoint are different. With JSON-RPC, it's a little trickier.
 
 Unfortunately, the standardization and tooling story around JSON-RPC are lacking behind.
 
-[OpenRPC](https://open-rpc.org/) is the equivalent of [OpenAPI] and comes with a bunch of tools:
+[OpenRPC](https://open-rpc.org/) is the equivalent of OpenAPI and comes with a bunch of tools:
 - [Generator](https://github.com/open-rpc/generator): it can mainly generate Typescript backend & frontend. It can only generate Go frontend and Rust backend.
 - no visual editor
 - no documentation visualizer
@@ -232,7 +232,7 @@ There is no visual editor to create the .proto files, but it is unecessary as it
 gRPC has [built-in](https://github.com/grpc/grpc-go/blob/master/Documentation/grpc-auth-support.md) security and authentication/authorization mechanisms.
 
 Weaknesses:
-- Client-side and Bi-directional streaming are currently not supported in the browser. [Only Unary and Server-side streamings are](https://github.com/grpc/grpc-web#make-a-unary-rpc-call)
+- Client-side and Bi-directional streaming are not currently supported in the browser. [Only Unary and Server-side streamings are](https://github.com/grpc/grpc-web#make-a-unary-rpc-call)
 - in general running gRPC in a browser [requires a proxy such as Envoy to translate HTTP/1.1 request from the browser to HTTP/2 request in the backend ](https://github.com/grpc/grpc-web/blob/master/net/grpc/gateway/examples/echo/tutorial.md#configure-the-envoy-proxy)
 - the messages themselves are not human reable (it's binary)
 - not suitable for real-time communication - but it's not the purpose here anyway
