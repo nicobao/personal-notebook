@@ -229,7 +229,7 @@ In the frontend, you just say which data you want, and you don't care about how 
 - GraphQL relay is solving problems for large-scale applications, which most of us aren't dealing with
 - rate-limiting, authentication, telemetry are complex to implement
 
-Basically GraphQL is a black-box API Gateway. Explicit is better than implicit, and the benefits do not counter balance the drawbacks, that's why I don't like GraphQL.
+Basically GraphQL is a black-box API Gateway. Explicit is better than implicit, and GraphQL benefits do not counter balance the drawbacks, that's why I don't like GraphQL.
 
 ### gRPC (protobuf and buf)
 
