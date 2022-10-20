@@ -207,7 +207,7 @@ In the frontend, you just say which data you want, and you don't care about how 
 
 #### Advantages
 
-- you can choose exactly which data you need from the frontend, which avoids underfetching or overfetching. This is not easy with any of the other options. The frontend story, when it works, is pretty pleasant.
+- you can choose exactly which data you need from the frontend, which avoids underfetching or overfetching. This is not easy with any of the other options. The frontend story, when it works, is particularly smooth and pleasant.
 - statically typed with the schema (api discovery, code generation, documentation). This is solved by OpenAPI in REST.
 
 ##### Disadvantages
