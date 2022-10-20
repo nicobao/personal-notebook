@@ -11,6 +11,8 @@ The reason is:
 - both solutions support bidirectional communication
 - these tools do not unecessarily hide [essential complexity](http://www.cs.unc.edu/techreports/86-020.pdf) in my backend, which I need to implement [technical features](https://softwareengineering.stackexchange.com/questions/199657/difference-between-functional-and-technical-specification)
 
+Note: REST+Websocket is better suited for a public API than gRPC, because of the technical limitations around HTTP/2 & gRPC in browsers. gRPC is probably more interesting for Internal API.
+
 ## Intro
 
 Which technology can you use to publish a somewhat-standard public API?
