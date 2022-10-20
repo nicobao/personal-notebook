@@ -7,9 +7,9 @@ I'd use:
 - WebSocket + AsyncAPI if I need publish/subscribe
 
 The reason is:
-- the tooling is great for an api-first approach to designing APIs. One unique statically typed source of truth which is the OpenAPI/AsyncAPI documents. And then everything else compiles from it: documentation and client/server code in any languages you like.
-- these tools do not unecessarily hide [essential complexity](http://www.cs.unc.edu/techreports/86-020.pdf) in my backend, which I need to implement [technical features](https://softwareengineering.stackexchange.com/questions/199657/difference-between-functional-and-technical-specification)
-- these tools provide a decent experience for the consumer of the Public API
+- the tooling is great for an api-first approach to designing APIs (unlike JSON-RPC). One unique statically typed source of truth which is the OpenAPI/AsyncAPI documents. And then everything else compiles from it: documentation and client/server code in any languages you like.
+- these tools do not unecessarily hide [essential complexity](http://www.cs.unc.edu/techreports/86-020.pdf) in my backend, which I need to implement [technical features](https://softwareengineering.stackexchange.com/questions/199657/difference-between-functional-and-technical-specification) (unlike GraphQL)
+- these tools provide a decent experience for the consumer of the Public API (unlike gRPC), and do not unecessarily hide essential complexity from the frontend (unlike GraphQL which relies on layers of external libraries and make caching a pain)
 
 ## Intro
 
