@@ -113,16 +113,6 @@ GET proposal/:address:
       - cids - List[CID]
 ```
 
-and the query returns a JSON which body is:
-```json
-{
-	"proposal": {
-		"status": "in-progress",
-		"content": "{ some proposal }"
-	}
-}
-```
-
 then the output of `openapi-generator` in a statically typed language will be a function:
 
 `GetProposalByAddressResponseDTO getProposalByAddress(String address, Boolean onlyLatest, List[CID] cids);`
