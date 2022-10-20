@@ -11,8 +11,6 @@ The reason is:
 - both solutions support bidirectional communication
 - these tools do not unecessarily hide [essential complexity](http://www.cs.unc.edu/techreports/86-020.pdf) in my backend, which I need to implement [technical features](https://softwareengineering.stackexchange.com/questions/199657/difference-between-functional-and-technical-specification)
 
-Note: gRPC is not so well-suited for a Public API because of the technical limitations in the browser, and because standard tools like cURL cannot be used. There are some good work-arounds (grpcurl, grpc-web, grpc-gateway) so it can work, but they add some accidential complexity. gRPC leans well for being used as Internal API.
-
 ## Intro
 
 Which technology can you use to publish a somewhat-standard public API?
@@ -243,6 +241,7 @@ In gRPC, you define your API in a statically typed Intermediary Definition Langu
 gRPC uses HTTP/2, data is sent in binary format and hence gRPC is the fastest API technology I evaluated (except WebSocket eventually). HTTP/2 allows multiplexing and hence processing in parallel in any order requests received in a single underlying TCP connection.
 
 gRPC allows for Unary, Client, Server and Bidirectional streaming.
+gRPC has [built-in](https://github.com/grpc/grpc-go/blob/master/Documentation/grpc-auth-support.md) security and authentication/authorization mechanisms.
 
 [buf](https://docs.buf.build/introduction) is the tool for:
 - generating code (pretty comprehensive here, and golang is supported)
@@ -251,14 +250,12 @@ gRPC allows for Unary, Client, Server and Bidirectional streaming.
 - [generate documentation](https://docs.buf.build/bsr/documentation)
 - and more
 
-There is no visual editor to create the .proto files, but it is unecessary as it is simply a programming language.
-
-[grpcurl](https://github.com/fullstorydev/grpcurl) is the functional equivalent of cURL for gRPC.
-
-gRPC has [built-in](https://github.com/grpc/grpc-go/blob/master/Documentation/grpc-auth-support.md) security and authentication/authorization mechanisms.
 
 Weaknesses:
 - Client-side and Bi-directional streaming are not currently supported in the browser. [Only Unary and Server-side streamings are](https://github.com/grpc/grpc-web#make-a-unary-rpc-call)
 - in general running gRPC in a browser [requires a proxy such as Envoy to translate HTTP/1.1 request from the browser to HTTP/2 request in the backend ](https://github.com/grpc/grpc-web/blob/master/net/grpc/gateway/examples/echo/tutorial.md#configure-the-envoy-proxy)
-- the messages themselves are not human readable (it's binary)
-- not suitable for real-time communication - but it's not the purpose here anyway
+- [grpcurl](https://github.com/fullstorydev/grpcurl) is the functional equivalent of cURL for gRPC. [grpc-gateway](https://github.com/grpc-ecosystem/grpc-gateway) is a tool that make a gRPC API queryable as a REST API. However, all of these adds much accidental complexity for the purpose of a Public API.
+- there is no visual editor to create the .proto files. For developers, it is unecessary as it is simply a programming language. However, it is a deal breaker for a Public API because API design must be done together with non-technical people that may not be comfortable using a programming language.
+
+
+In conclusion, gRPC leans well for being used as Internal API but gRPC is not well-suited for a Public API.
