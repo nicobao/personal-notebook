@@ -11,7 +11,7 @@ The reason is:
 - both solutions support bidirectional communication
 - these tools do not unecessarily hide [essential complexity](http://www.cs.unc.edu/techreports/86-020.pdf) in my backend, which I need to implement [technical features](https://softwareengineering.stackexchange.com/questions/199657/difference-between-functional-and-technical-specification)
 
-Note: gRPC is not well-suited for a Public API because of the technical limitations in the browser, and because standard tools like cURL cannot be used. There are some good work-arounds (grpcurl, grpc-web, grpc-gateway) so it can work, but they add some accidential complexity. gRPC leans well for being used as Internal API.
+Note: gRPC is not so well-suited for a Public API because of the technical limitations in the browser, and because standard tools like cURL cannot be used. There are some good work-arounds (grpcurl, grpc-web, grpc-gateway) so it can work, but they add some accidential complexity. gRPC leans well for being used as Internal API.
 
 ## Intro
 
