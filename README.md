@@ -1,6 +1,6 @@
 # Personal notebook
 
-I write about software development workflow and tools.
+I write about software.
 
 You can read about:
 - [my opinionated software project management workflow](./001_opinionated_sw_project_development_framework.md)
