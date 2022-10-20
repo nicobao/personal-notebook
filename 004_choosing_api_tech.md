@@ -8,7 +8,6 @@ I'd use:
 
 The reason is:
 - the tooling is great for an api-first approach to designing APIs. One unique statically typed source of truth which is the OpenAPI/AsyncAPI documents or the .proto files. And then everything else compiles from it: documentation and client/server code in any languages you like.
-- both solutions support bidirectional communication
 - these tools do not unecessarily hide [essential complexity](http://www.cs.unc.edu/techreports/86-020.pdf) in my backend, which I need to implement [technical features](https://softwareengineering.stackexchange.com/questions/199657/difference-between-functional-and-technical-specification)
 - these tools provide a decent experience for the consumer of the Public API
 
