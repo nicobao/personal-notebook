@@ -2,9 +2,9 @@
 
 ## TL;DR
 
-I'd use either:
-- (REST + OpenAPI AND WebSocket + AsyncAPI) OR
-- protobuf + gRPC + buf
+I'd use:
+- REST + OpenAPI for request/responses AND
+- WebSocket + AsyncAPI if I need publish/subscribe
 
 The reason is:
 - the tooling is great for an api-first approach to designing APIs. One unique statically typed source of truth which is the OpenAPI/AsyncAPI documents or the .proto files. And then everything else compiles from it: documentation and client/server code in any languages you like.
