@@ -8,3 +8,4 @@ You can read about:
 - [how I configure git](./002_git_github_config.md)
 - [which approach to designing a public API?](./004_choosing_api_tech.md)
 - [how to localize a web app?](./005_how_to_localize_app.md)
+- [how to use Kong Gateway](./006_using_kong.md)
